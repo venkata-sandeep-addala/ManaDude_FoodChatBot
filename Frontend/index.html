@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FoodieHub | Order Delicious Food</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🍕 FoodieHub</h1>
+        <p>Fresh • Fast • Delicious</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Order Your Favorite Food Online</h2>
+        <p>Chat with our FoodBot to place your order instantly!</p>
+        <button onclick="openChat()">Chat with ManaDude 🤖</button>
+    </section>
+
+    <!-- Menu -->
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu-items">
+        <div class="item">
+            <h3>🍛 Pav Bhaji</h3>
+            <p>Spicy mashed vegetables with buttered pav</p>
+            <span>$6</span>
+        </div>
+
+        <div class="item">
+            <h3>🥙 Chole Bhature</h3>
+            <p>Punjabi chole with fluffy bhature</p>
+            <span>$7</span>
+        </div>
+
+        <div class="item">
+            <h3>🍕 Pizza</h3>
+            <p>Cheesy pizza with fresh toppings</p>
+            <span>$8</span>
+        </div>
+
+        <div class="item">
+            <h3>🥭 Mango Lassi</h3>
+            <p>Refreshing sweet mango yogurt drink</p>
+            <span>$5</span>
+        </div>
+
+        <div class="item">
+            <h3>🥞 Masala Dosa</h3>
+            <p>Crispy dosa with spiced potato filling</p>
+            <span>$6</span>
+        </div>
+
+        <div class="item">
+            <h3>🍚 Biryani</h3>
+            <p>Fragrant rice cooked with aromatic spices</p>
+            <span>$9</span>
+        </div>
+
+        <div class="item">
+            <h3>🌮 Vada Pav</h3>
+            <p>Mumbai-style spicy vada pav</p>
+            <span>$4</span>
+        </div>
+
+        <div class="item">
+            <h3>🥞 Rava Dosa</h3>
+            <p>Thin and crispy dosa made from semolina</p>
+            <span>$7</span>
+        </div>
+
+        <div class="item">
+            <h3>🥟 Samosa</h3>
+            <p>Deep-fried pastry with spiced potato filling</p>
+            <span>$5</span>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            FoodieHub brings you the best food from our kitchen to your doorstep.
+            Order using our smart chatbot anytime!
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>📞 +91 98765 43210</p>
+        <p>📧 support@foodiehub.com</p>
+    </section>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot-container" class="chatbot">
+        <div class="chat-header">
+            <span>FoodChatBot 🤖</span>
+            <button onclick="closeChat()">✖</button>
+        </div>
+
+        <!-- CHATBOT IFRAME -->
+        <iframe
+            src="https://console.dialogflow.com/api-client/demo/embedded/629275e9-cb84-4344-a799-35a28cd4f963"
+            frameborder="0">
+        </iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
